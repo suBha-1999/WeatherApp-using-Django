@@ -8,7 +8,7 @@ def home(request):
     city_name = request.POST.get('city', 'salboni')
 
     # OpenWeatherMap setup
-    WEATHER_API_KEY = 'd9cf3d550a9f9dc08f36233194f9d9af'
+    WEATHER_API_KEY = ''
     weather_url = f'https://api.openweathermap.org/data/2.5/weather'
     weather_params = {
         'q': city_name,
@@ -17,8 +17,8 @@ def home(request):
     }
 
     # Google Custom Search API setup
-    GOOGLE_API_KEY = 'AIzaSyDgCLkQ1R9UskQpKJtSCeixeeOV4pokAKQ'
-    SEARCH_ENGINE_ID = '0273228923a354c58'
+    GOOGLE_API_KEY = ''
+    SEARCH_ENGINE_ID = ''
     query = city_name + " 1920x1080"
     image_url = None
 
